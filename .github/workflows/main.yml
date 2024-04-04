@@ -5,7 +5,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity :AppCompatActivity() {
 
     /* name of celebrities that have passed on. this array links to the ages below.*/
     private var infOfDeadPeople = arrayOf(
