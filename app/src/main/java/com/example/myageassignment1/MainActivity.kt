@@ -22,10 +22,11 @@ class MainActivity : AppCompatActivity() {
         "Pablo Escobar, He was a Colombian drug lord, narcoterrorist and politician. He was the founder and sole leader of the Medellin Cartel.",
         "Theodore Roosevelt, the 26th president os the United states. he died in his sleep.",
         /* (Ballhau L, 2023)
-        * https://www.sheknows.com*/
+        * https://www.sheknows.com
+        * Module Manual IMAD page 79*/
     )
 
-    /* the ages of when the celebrities passed on. linked to the array above. */
+    /* the ages of when the celebrities passed on. linked to the array above. Module Manual IMAD page 79 */
     private var ages = arrayOf(
         20,
         32,
@@ -43,16 +44,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /* declaration of buttons */
+        /* declaration of buttons Module Manual IMAD page  67*/
         val btnClear = findViewById<Button>(R.id.btnClear)
         val btnGenerate = findViewById<Button>(R.id.btnGenerate)
 
 
-        /* declaration of the EditText and TextView */
+        /* declaration of the EditText and TextView  module manual IMAD page 67*/
         val txtAge = findViewById<EditText>(R.id.txtAge)
         val txtHistory = findViewById<TextView>(R.id.txtHistory)
 
-        /* Generate Button Instructions, this is what the Button is supposed to do. */
+        /* Generate Button Instructions, this is what the Button is supposed to do. module manual IMAD page 45 */
         btnGenerate.setOnClickListener {
             val enteredAge = txtAge.text.toString().toIntOrNull()
             if (enteredAge in 20..100) /* check if the age range is between 20 and 100 */
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-       /* Clear Button Instructions, instructed to clear any text that hase been entered. */
+       /* Clear Button Instructions, instructed to clear any text that hase been entered. Module manual IMAD page 45 */
         btnClear.setOnClickListener {
             txtAge.text.clear()
             txtHistory.text = ""
